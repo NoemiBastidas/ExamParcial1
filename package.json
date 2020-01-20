@@ -1,0 +1,33 @@
+{
+  "name": "app-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongod": "^2.0.0",
+    "mongoose": "^5.8.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "nodemonConfig": {
+    "restarble": "rs",
+    "ignore": [
+      "node-modules/**/node-modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "develpoment",
+      "PORT": 4000
+    }
+  }
+}
